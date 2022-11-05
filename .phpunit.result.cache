@@ -1,0 +1,1 @@
+{"version":1,"defects":{"SentryTracerTest::testCanCreateSpan":4,"AAllport\\SentryPsrTracingTests\\SentryTracerTest::testCanCreateSpan":4},"times":{"SentryTracerTest::testCanCreateSpan":0.005,"AAllport\\SentryPsrTracingTests\\SentryTracerTest::testCanCreateSpan":0.009}}

@@ -1,0 +1,31 @@
+{
+  "name": "aallport/sentry-php-psr22",
+  "description": "PSR22 Adapter for Sentry",
+  "type": "library",
+  "require": {
+    "psr/tracing": "dev-main",
+    "sentry/sentry": "^3.0"
+  },
+  "require-dev": {
+    "php-http/curl-client": "^2.0",
+    "phpunit/phpunit": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "AAllport\\SentryPsrTracing\\": "src/",
+      "AAllport\\SentryPsrTracingTests\\": "tests/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "github",
+      "url": "https://github.com/AAllport/psr-tracing"
+    }
+  ],
+  "authors": [
+    {
+      "name": "Adam Allport",
+      "email": "adam@allport.me.uk"
+    }
+  ]
+}
