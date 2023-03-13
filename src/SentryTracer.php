@@ -18,4 +18,16 @@ class SentryTracer implements TracerInterface
         $parent = SentrySdk::getCurrentHub()->getSpan();
         return $parent->getTraceId();
     }
+
+    public function getRootSpan(): SpanInterface
+    {
+        $hub = SentrySdk::getCurrentHub();
+        return SentrySpan::fromVendor($hub->getTransaction());
+    }
+
+    public function getCurrentSpan(): SpanInterface
+    {
+        $hub = SentrySdk::getCurrentHub();
+        return SentrySpan::fromVendor($hub->getSpan() ?? $hub->getTransaction());
+    }
 }
